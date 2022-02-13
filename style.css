@@ -362,6 +362,68 @@ body::before {
     width: 70%;
 }
 
+
+/* FOOTER */
+
+footer .about-title {
+    margin-bottom: 4rem;
+}
+
+footer .about-title h1 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px #ddd;
+    font-size: 8vw;
+    font-weight: 1000;
+}
+
+
+/* My pics */
+
+.my-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.my-img .card {
+    position: relative;
+    width: 290px;
+    height: 369px;
+    background: url(img/3.jpg) no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
+    background-size: 600px;
+    transition: all 0.8s ease-in-out; 
+
+}
+
+.my-img .card:hover {
+    background-size: 1000px;
+}
+
+.my-img .card:hover h2 {
+    color: transparent;
+    -webkit-text-stroke: 2px red;
+    opacity: 1;
+    text-shadow: -3px 3px 10px rgba(0, 0, 0, 1);
+    transform: rotate(90deg) translateX(-35px);
+}
+
+.my-img .card h2 {
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    transform: rotate(90deg);
+    transition: all .3s ease-in-out;
+    font-size: 1.7rem;
+}
+
 /* Footer */
 
 footer {
@@ -372,13 +434,6 @@ footer .footer-content {
     text-align: center;
     color: #ddd;
 }
-
-footer .footer-content h1 {
-    font-size: 2.2rem;
-    font-weight: 100;
-    margin-bottom: 1rem;
-}
-
 
 footer .footer-content p {
     opacity: .6;
@@ -579,3 +634,5 @@ footer .footer-content ul li a:hover::before {
         font-size: 4rem;
     }  
 }
+
+
