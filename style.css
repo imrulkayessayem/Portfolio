@@ -241,34 +241,32 @@ body::before {
     padding: 3rem 2rem;
 }
 
+.my-skils .container .skils-container .skill:hover img {
+    transform: scale(1.7) translateY(-50px) translateX(-50px);
+}
+
 .my-skils .skils-container .skill img {
     width: 30%;
     cursor: pointer;
+    transition: all .3s ease-in;
 }
 
 
 /* Marquee */
 
 #honour {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     height: 30vw;
-    margin-top: -7vw;
 }
 
 #honour .honour__scrolller {
     position: relative;
     background-color: #fff;
-    color: #000;
-    -webkit-transform: rotate(-5deg) scale(1.1);
+    color: transparent;
+    -webkit-text-stroke: 3px #000;
     transform: rotate(-5deg) scale(1.1);
     border-top: #333 0.2vw solid;
     border-bottom: #333 0.2vw solid;
