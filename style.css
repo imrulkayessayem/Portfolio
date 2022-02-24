@@ -70,7 +70,7 @@ body::before {
 
 .navbar ul li img {
     width: 70px;
-    animation: wing 1s ease-in-out infinite;
+    animation: wing .7s infinite;
     transition: all 4s ease-in;
     cursor: none;
 }
@@ -233,25 +233,24 @@ body::before {
     padding: 1vw 5vw 8vw;
 }
 
-.my-skils .container .skils-container .skill {
+/* .my-skils .container .skils-container .skill {
     transition: all .3s ease-in;
     position: relative;
     border: 3px solid rgba(221, 221, 221, 0.609);
     box-shadow: 10px 10px 10px rgba(41, 41, 41, 0.801), -10px -10px 10px rgba(41, 41, 41, 0.801);
     padding: 3rem 2rem;
-}
+} */
 
-.my-skils .container .skils-container .skill:hover img {
+/* .my-skils .container .skils-container .skill:hover img {
     transform: scale(1.7) translateY(-50px) translateX(-50px);
-}
+} */
 
 .my-skils .skils-container .skill img {
     width: 30%;
     cursor: pointer;
-    transition: all .3s ease-in;
+    z-index: -3000;
+    transition: all .3s ease-in-out;
 }
-
-
 /* Marquee */
 
 #honour {
@@ -260,6 +259,7 @@ body::before {
     justify-content: center;
     position: relative;
     height: 30vw;
+    overflow-x: hidden;
 }
 
 #honour .honour__scrolller {
@@ -408,7 +408,7 @@ footer .about-title h1 {
 
 .my-img .card:hover h2 {
     color: transparent;
-    -webkit-text-stroke: 2px red;
+    -webkit-text-stroke: 2px #fff;
     opacity: 1;
     text-shadow: -3px 3px 10px rgba(0, 0, 0, 1);
     transform: rotate(90deg) translateX(-35px);
@@ -551,10 +551,18 @@ footer .footer-content ul li a:hover::before {
     .projects .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .my-skils .container .skils-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 670px) {
     .projects .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my-skils .container .skils-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -635,4 +643,44 @@ footer .footer-content ul li a:hover::before {
     }  
 }
 
+@media (max-width: 1111px) {
+    #honour {
+        height: 32vw;
+    }
+}
 
+@media (max-width: 781px) {
+    #honour {
+        height: 35vw;
+    }
+}
+
+@media (max-width: 603px) {
+    #honour {
+        height: 37vw;
+    }
+}
+
+@media (max-width: 517px) {
+    #honour {
+        height: 39vw;
+    }
+}
+
+@media (max-width: 435px) {
+    #honour {
+        height: 41vw;
+    }
+}
+
+@media (max-width: 389px) {
+    #honour {
+        height: 44vw;
+    }
+}
+
+@media (max-width: 313px) {
+    #honour {
+        height: 46vw;
+    }
+}
