@@ -555,6 +555,11 @@ footer .footer-content ul li a:hover::before {
     .my-skils .container .skils-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
+    .projects .container .project-title {
+        font-size: 5rem;
+     }
 }
 
 @media (max-width: 670px) {
@@ -564,6 +569,10 @@ footer .footer-content ul li a:hover::before {
 
     .my-skils .container .skils-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects .container .project-title {
+        font-size: 3.5rem;
     }
 }
 
@@ -682,5 +691,17 @@ footer .footer-content ul li a:hover::before {
 @media (max-width: 313px) {
     #honour {
         height: 46vw;
+    }
+}
+
+@media (max-width: 1448px) {
+    .header-content h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 1214px) {
+    .header-content h1 {
+        font-size: 7rem;
     }
 }
