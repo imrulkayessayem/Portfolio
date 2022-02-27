@@ -9,7 +9,11 @@
     <link rel="icon" href="/img/Sayem.png">
     <title>Imrul Kayes Sayem</title>
 </head>
-<body>
+<body onload="myFunction()">
+
+    <div id="loading">
+
+    </div>
     
     <header class="main-header" id="home">
         <div class="container">
@@ -228,6 +232,15 @@
 
 
 <script src="main.js"></script>
+
+
+<script>
+    var preloader = document.getElementById("loading");
+
+    function myFunction() {
+        preloader.style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
