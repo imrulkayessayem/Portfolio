@@ -43,6 +43,58 @@ body::before {
     z-index: -1;
 }
 
+
+/* Cursor */
+
+.cursor {
+    z-index: 10000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid #333; */
+    /* background-color: rgba(255, 255, 255, 0.356); */
+    height: 180px;
+    width: 180px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.1s;
+  }
+  
+  .cursor::after,
+  .cursor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.102);
+    border: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+  }
+  .cursor::before {
+    background-color: rgb(0, 0, 0);
+  }
+  .cursor.click::before {
+    animation: click 1s ease forwards;
+    background-color: rgb(0, 0, 0);
+  }
+  @keyframes click {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(7);
+    }
+  }
+  
+
+
+
 /* Utility */
 
 .container {
